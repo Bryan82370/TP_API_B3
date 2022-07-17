@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable func-names */
 class ActorRepository {
     constructor(database) {
         this.database = database;
@@ -91,14 +89,6 @@ class ActorRepository {
             );
         });
     }
-
-    // eslint-disable-next-line class-methods-use-this
-    /*decorator(actor) {
-        return {
-            ...actor,
-            done: actor.done === 1,
-        };
-    }*/
 }
 
 module.exports = ActorRepository;

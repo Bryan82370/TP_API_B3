@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable func-names */
 class GenresRepository {
     constructor(database) {
         this.database = database;
@@ -40,7 +38,7 @@ class GenresRepository {
     delete(id) {
         return new Promise((resolve, reject) => {
             this.database.run(
-                `DELETE FROM actor
+                `DELETE FROM genres
                  WHERE id = ?`,
                 [id],
                 (err) => {
@@ -48,20 +46,12 @@ class GenresRepository {
                         console.error(err.message);
                         reject(err);
                     } else {
-                        resolve(true);
+                        resolve();
                     }
                 },
             );
         });
     }
-
-    // eslint-disable-next-line class-methods-use-this
-    /*decorator(actor) {
-        return {
-            ...actor,
-            done: actor.done === 1,
-        };
-    }*/
 }
 
 module.exports = GenresRepository;

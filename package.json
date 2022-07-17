@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/3rgo/node_api.git"
+    "url": "git+https://github.com/Bryan82370/TP_API_B3"
   },
-  "author": "",
+  "author": "Bryan HELLER & Maxime ROBIN",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/3rgo/node_api/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/3rgo/node_api#readme",
+  "homepage": "https://github.com/Bryan82370/TP_API_B3#readme",
   "dependencies": {
     "body-parser": "^1.20.0",
     "express": "^4.18.1",
